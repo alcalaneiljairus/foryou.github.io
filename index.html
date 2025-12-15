@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Monthsary Celebration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="app">
+        <header>
+            <h1 tabindex="0">Happy Monthsary, My Love! 💖</h1>
+            <p id="subtitle">Thirty days of giggles, kisses and cozy evenings — let's make today sparkle.</p>
+        </header>
+
+        <div class="top-controls">
+            <button id="surpriseBtn" aria-expanded="false">Open a Surprise ✨</button>
+            <button id="musicToggle" aria-pressed="false">Play Music ♪</button>
+        </div>
+
+        <main>
+            <section class="interactive" aria-labelledby="surprise-heading">
+                <div id="surpriseMessage" class="card hidden" role="region" aria-live="polite">
+                                    <h2 id="surprise-heading">A Little Surprise</h2>
+                    <p class="big">You are my sunshine — every day brighter with you. 🌞</p>
+                    <button id="kissBtn" class="kiss">Send a virtual kiss 😘</button>
+                </div>
+            </section>
+
+            <section class="game" aria-labelledby="game-heading">
+                <h2 id="game-heading">Playful Match</h2>
+                <p class="muted">Match the hearts — every match unlocks a loving note.</p>
+                <div class="game-board" role="grid" aria-label="Memory game">
+                    <button class="card" data-value="1" aria-label="card">❤️</button>
+                    <button class="card" data-value="1" aria-label="card">❤️</button>
+                    <button class="card" data-value="2" aria-label="card">💕</button>
+                    <button class="card" data-value="2" aria-label="card">💕</button>
+                    <button class="card" data-value="3" aria-label="card">💖</button>
+                    <button class="card" data-value="3" aria-label="card">💖</button>
+                </div>
+                <p id="gameStatus">Matches found: 0/3</p>
+            </section>
+
+            <section class="memories" aria-labelledby="mem-heading">
+                <h2 id="mem-heading">Our Month in Memories</h2>
+                <ul>
+                    <li><strong>Day 1:</strong> Our first date under the stars ✨</li>
+                    <li><strong>Day 15:</strong> That surprise picnic 🧺</li>
+                    <li><strong>Today:</strong> Celebrating us! 🎉</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Made with love — press <kbd>Space</kbd> on a button to interact. ♡</p>
+        </footer>
+
+        <!-- floating decorative heart SVG (sample provided in images/heart.svg) -->
+        <img id="floatingHeart" class="floating-png" src="images/heart.svg" alt="Floating heart" />
+
+        <!-- background music (optional) - drop a file at assets/music.mp3 or change src) -->
+        <audio id="bgMusic" src="assets/music.mp3" preload="none"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
